@@ -2,6 +2,8 @@ TestBloggy::Application.routes.draw do
 
   root :to => 'welcome#index'
 
+  match '/blog(:id)', to: 'blog#proxy', :id => /.+/
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
