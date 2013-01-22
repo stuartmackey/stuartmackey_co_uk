@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="span12">
+    <h1>Unit testing with Mongoid</h1>
+    <span class="post-posted-on">Posted on March 01, 2012</span> 
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <div id="post">
+    <p>Since MongoDB has no transactions you need to the clearing up for data after each unit test manually, here is a tip to make that a lot easier. In file test_helper.rb in class ActiveSupport::TestCase add the following</p>
+
+<pre><code>teardown :clean_mongodb
+def clean_mongodb
+   Mongoid.database.collections.each do |collection|
+     unless collection.name =~ /^system\./
+       collection.remove
+     end
+  end
+end
+</code></pre>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12 post-category">
+    Posted in ruby, mongoid, and rails
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <div id="related">
+      <h2>Related Posts</h2>
+      <ul class="posts">
+        
+          <li><span>11 Nov 2012</span> &raquo; <a href="/blog/android-a-practical-joke.html">Android - A practical joke?</a></li>
+        
+          <li><span>28 Oct 2012</span> &raquo; <a href="/blog/more-test-driven-ios-development.html">More Test Driven iOS Development</a></li>
+        
+          <li><span>26 Oct 2012</span> &raquo; <a href="/blog/indie-game-the-movie.html">Indie Game: The Movie</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>

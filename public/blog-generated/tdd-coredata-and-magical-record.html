@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="span12">
+    <h1>TDD, CoreData and Magical Record</h1>
+    <span class="post-posted-on">Posted on August 30, 2012</span> 
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <div id="post">
+    <p>As part of our push to do more TDD I have been wrestling with what to do for one of our classes that is responsible for persisting business objects.  It is using Core Data for storage so other than checking for manadatory parameters I thought there was not much else that could be tested. I did consider wrapping all the Core Data access in my own class which would allow for mocking but it didn't feel right.  As a last option I did some <a href="https://www.google.co.uk/search?q=coredata+tdd&amp;sugexp=chrome,mod=14&amp;sourceid=chrome&amp;ie=UTF-8">searches</a>.</p>
+
+<p>This led me to a <a href="http://www.cimgf.com/">CIMGF</a> <a href="http://www.cimgf.com/2012/05/15/unit-testing-with-core-data/">article</a>. It gives a solution to my problem, instead of mocking all the Core Data calls, just use normal CoreData but set your persistent store to be in-memory.  The beauty of this is that your test execution isn't slowed down and you have a fresh clean database for each test. The article suggests using <a href="https://github.com/magicalpanda/magicalrecord">Magical Record</a> to wrap up your Core Data access and be responsible for creating the in-memory store.</p>
+
+<p>By using a combination of the CIMGF article and the Magical Record documentation I was able to get a method of our application implemented and tested in a few hours. Obviously things might change when we use it more but so far I think it is a great, low impact way of testing Core Data reliant code.  The TDD purist out there probably won't like it but I am happy.</p>
+
+<p>Note: I had to add our xcdatamodeld file into the tests target to get it working, this isn't mentioned anywhere in the documentation so might just be something odd about our project set up.</p>
+
+<p>Below is an example of one of the test</p>
+
+<ul>
+<li><p>(void)testShouldStoreFileItemAsOffline {
+  File *item = [[File alloc] init];
+  item.name = @"My Test Item";
+  store.context = [NSManagedObjectContext MR_defaultContext];
+  [store markItemAsOffline:item forProvider:[[Provider alloc] init] success:nil failure:nil];</p>
+
+<p>  NSArray *items = [FileData MR_findAll];</p>
+
+<p>  STAssertNotNil(items, @"Should have returned items");
+  STAssertTrue([items count] == 1, @"Should have returned a single item");
+  STAssertEqualObjects(((FileData *)[items objectAtIndex:0]).name, item.name, @"Should have saved the supplied item");
+}</p></li>
+</ul>
+
+
+<p>Here are some other article that I found on my travels</p>
+
+<p><a href="http://stackoverflow.com/questions/6880739/how-to-use-core-data-for-dependency-injection">http://stackoverflow.com/questions/6880739/how-to-use-core-data-for-dependency-injection</a><br/>
+<a href="http://yannickloriot.com/2012/03/magicalrecord-how-to-make-programming-with-core-data-pleasant/">http://yannickloriot.com/2012/03/magicalrecord-how-to-make-programming-with-core-data-pleasant/</a><br/>
+<a href="http://iamleeg.blogspot.co.uk/2009/09/unit-testing-core-data-driven-apps.html">http://iamleeg.blogspot.co.uk/2009/09/unit-testing-core-data-driven-apps.html</a></p>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12 post-category">
+    Posted in ios, coredata, tdd, magical record, and unit tests
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <div id="related">
+      <h2>Related Posts</h2>
+      <ul class="posts">
+        
+          <li><span>11 Nov 2012</span> &raquo; <a href="/blog/android-a-practical-joke.html">Android - A practical joke?</a></li>
+        
+          <li><span>28 Oct 2012</span> &raquo; <a href="/blog/more-test-driven-ios-development.html">More Test Driven iOS Development</a></li>
+        
+          <li><span>26 Oct 2012</span> &raquo; <a href="/blog/indie-game-the-movie.html">Indie Game: The Movie</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>

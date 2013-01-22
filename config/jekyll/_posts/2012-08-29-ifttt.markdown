@@ -1,0 +1,11 @@
+---
+layout: post
+title: "IFTTT"
+date: 2012-08-29 08:21
+comments: true
+categories: octopress
+author: Stuart
+---
+Now that we have switched to using Octopress I have been trying to find a service that will auto post tweets when a new blog entry has been added. This morning I found [ifttt.com](http://ifttt.com/). The UI that they use to create the rules is very impressive, it reminds me of the [Amen](https://getamen.com/) iOS app.  
+
+This post it also partly a test to check if the tweets are being created correctly, fingers crossed.

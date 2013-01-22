@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>BLOG_NAME</title>
- <link href="YOUR_URL/atom.xml" rel="self"/>
- <link href="YOUR_URL"/>
- <updated>2013-01-22T15:06:24+00:00</updated>
+ <title>stuartmackey.co.uk</title>
+ <link href="http://www.stuartmackey.co.uk/blog/atom.xml" rel="self"/>
+ <link href="http://www.stuartmackey.co.uk/blog/"/>
+ <updated>2013-01-22T16:10:19+00:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
@@ -12,20 +12,233 @@
 
  
  <entry>
-   <title>another-test</title>
-   <link href="YOUR_URL/another-test.html"/>
-   <updated>2013-01-22T00:00:00+00:00</updated>
-   <id>BLOG_URL/another-test</id>
-   <content type="html">&lt;p&gt;Just a quick test of bloggy&lt;/p&gt;
+   <title>Android - A practical joke?</title>
+   <link href="http://www.stuartmackey.co.uk/blog/android-a-practical-joke.html"/>
+   <updated>2012-11-11T19:51:00+00:00</updated>
+   <id>BLOG_URL/android-a-practical-joke</id>
+   <content type="html">&lt;p&gt;In general Paper Bag does the majority of its work on the iOS platform.  I can't really think of an exact number but it is probably around 70-80% iOS, the rest is divided up between Android and Blackberry.&lt;/p&gt;
+
+&lt;p&gt;For the last couple of weeks we have however been developing an application for a client in both Blackberry and Android.  For anyone that has developed in for the Blackberry platform you will know that it can be a very frustrating experience.  The problems of Blackberry pale into insignificance in comparison to the problems we have been having with Android.&lt;/p&gt;
+
+&lt;p&gt;The last Android project we did was for v2.x and it was difficult enough but now that 4.x is on the scene I am seriously starting to think that it is all just one massive joke that Google are playing on us.  Many people will think that I am just an Apple Fanboi having a rant and maybe they are right but I don't think I am being biased.  iOS has plenty of frustrations but at least I feel that there is a guiding hand somewhere up there that is trying to do its best, with Android I get no such fuzzy feeling.  Parts get depricated with no real alternative (e.g. Activites for Tabs being replaced by fragments), certain controls lack even basic functionality that you would expect in a v1 let alone a v4 (e.g. pan and zoom detection in MapView) and countless other things that have left me both baffled and all the team banging our heads against a wall.&lt;/p&gt;
+
+&lt;p&gt;On Thursday afternoon I finally was able to put into words how a felt about the hole business.  I feel like we are developing using an SDK that was written as a final year project.  Maybe the coming weeks will lead me to an epiphany and I will 'get' Android, it cannot come quickly enough.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
-   <title>A Test Post</title>
-   <link href="YOUR_URL/a-test-post.html"/>
-   <updated>2012-04-25T00:00:00+01:00</updated>
-   <id>BLOG_URL/a-test-post</id>
-   <content type="html">&lt;p&gt;Zach was bored while his girlfriend and her sister were talking and watching the voice. so this gem was created to generate a blog inside my rails application for my engine yard blog post.&lt;/p&gt;
+   <title>More Test Driven iOS Development</title>
+   <link href="http://www.stuartmackey.co.uk/blog/more-test-driven-ios-development.html"/>
+   <updated>2012-10-28T19:48:00+00:00</updated>
+   <id>BLOG_URL/more-test-driven-ios-development</id>
+   <content type="html">&lt;p&gt;Note: This is a follow up on a &lt;a href=&quot;test-driven-ios-development.html&quot;&gt;previous post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We are coming to the end of our first true iOS with TDD project.  Overall the project went incredibly well both from a technical and commerical point of view.  The customer is very happy and we delivered on time and on budget.&lt;/p&gt;
+
+&lt;p&gt;If I am being honest I am not sure whether we succeeded because of or inspite of the TDD.  Looking back at the code there is still a lot that we did wrong but we do have about 500 tests waiting to help catch any mistakes we may make in the future so we certainly did something right.  As with all TDD it is really about training your mind to think differently than it being technically difficult to implement.  Objective-C certainly has its own little idiosyncrasies but mostly I think it actually helped when it came to being able to UI element testing.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.amazon.co.uk/Test-driven-IOS-Development-Developers-Library/dp/0321774183/ref=sr_1_1?ie=UTF8&amp;amp;qid=1346182401&amp;amp;sr=8-1&quot;&gt;book&lt;/a&gt; that I mentioned in my &lt;a href=&quot;test-driven-ios-development.html&quot;&gt;original post &lt;/a&gt; was excellent.  In the end we deviated from it quite a bit and actually implemented a lot of our code using blocks rather than delegates but, in general, it was an excellent base to start from.&lt;/p&gt;
+
+&lt;p&gt;Now that we have lived through our first project I can be fairly confident that most, if not all, projects will be using it in the future.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Indie Game: The Movie</title>
+   <link href="http://www.stuartmackey.co.uk/blog/indie-game-the-movie.html"/>
+   <updated>2012-10-26T21:30:00+01:00</updated>
+   <id>BLOG_URL/indie-game-the-movie</id>
+   <content type="html">&lt;p&gt;I have a lot of friends that never really knew what they wanted to do when they 'grew up'.  I find that difficult to relate to them because I always wanted to be a programmer from the very first time I typed&lt;/p&gt;
+
+&lt;p&gt;  10 PRINT &quot;STUART IS COOL&quot;
+  20 GOTO 10&lt;/p&gt;
+
+&lt;p&gt;on my &lt;a href=&quot;http://en.wikipedia.org/wiki/ZX_Spectrum&quot;&gt;ZX Spectrum&lt;/a&gt;.  Ever since that day I have wanted to develop games.  I have started work on loads of them but never followed through.  Last night I started watching &lt;a href=&quot;http://buy.indiegamethemovie.com/&quot;&gt;Indie Game: The Movie&lt;/a&gt;.  In addition to really enjoying the movie I was left with the happy feeling that at least there were some people who, like me, always dreamt of writing a game but actually got up off their asses and did it.&lt;/p&gt;
+
+&lt;p&gt;If you have even a passing interest in Indie games and development you should check it out.&lt;/p&gt;
+
+&lt;p&gt;Maybe some day I will finally write Super Cars 3.&lt;/p&gt;
+
+&lt;p&gt;UPDATE: It turns out that someone actually wrote a Super Cars 3 for windows.  Time to set up a Windows VM. :-)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Responsive Rails Development</title>
+   <link href="http://www.stuartmackey.co.uk/blog/responsive-rails-development.html"/>
+   <updated>2012-09-05T15:10:00+01:00</updated>
+   <id>BLOG_URL/responsive-rails-development</id>
+   <content type="html">&lt;p&gt;For me, part of this week has been dedicated to looking creating responsive web sites in Rails.  It is something that has been on our radar for a while now but kept getting pushed back.  We have a few upcoming projects in that area so I could push it no longer.&lt;/p&gt;
+
+&lt;p&gt;Web development is something that I have been fairly removed from for a few years now and going back to it has been a bit of an eye opener.  As with all development these days it feels like there are 100s of approaches.  I was aware of the &lt;a href=&quot;http://twitter.github.com/bootstrap/index.html&quot;&gt;Twitter Bootstrap Project&lt;/a&gt; because of another project but there is also &lt;a href=&quot;http://foundation.zurb.com/&quot;&gt;Foundation&lt;/a&gt;, &lt;a href=&quot;http://www.designinfluences.com/fluid960gs/&quot;&gt;Fluid 960&lt;/a&gt; and many others.&lt;/p&gt;
+
+&lt;p&gt;I concentrated most of my investigation on Foundation and Twitter Bootstrap.  After a few false starts we have settled on Twitter Bootstrap as our preferred choice.  Foundation loooked excellent but Twitter Bootstrap felt easier to work with.&lt;/p&gt;
+
+&lt;p&gt;As I mentioned we will be working a lot in this area in the future so I am sure there will be most posts about it.&lt;/p&gt;
+
+&lt;h2&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://railsapps.github.com/twitter-bootstrap-rails.html&quot;&gt;http://railsapps.github.com/twitter-bootstrap-rails.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://sass-lang.com/&quot;&gt;http://sass-lang.com/&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>TDD, CoreData and Magical Record</title>
+   <link href="http://www.stuartmackey.co.uk/blog/tdd-coredata-and-magical-record.html"/>
+   <updated>2012-08-30T11:08:00+01:00</updated>
+   <id>BLOG_URL/tdd-coredata-and-magical-record</id>
+   <content type="html">&lt;p&gt;As part of our push to do more TDD I have been wrestling with what to do for one of our classes that is responsible for persisting business objects.  It is using Core Data for storage so other than checking for manadatory parameters I thought there was not much else that could be tested. I did consider wrapping all the Core Data access in my own class which would allow for mocking but it didn't feel right.  As a last option I did some &lt;a href=&quot;https://www.google.co.uk/search?q=coredata+tdd&amp;amp;sugexp=chrome,mod=14&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;searches&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This led me to a &lt;a href=&quot;http://www.cimgf.com/&quot;&gt;CIMGF&lt;/a&gt; &lt;a href=&quot;http://www.cimgf.com/2012/05/15/unit-testing-with-core-data/&quot;&gt;article&lt;/a&gt;. It gives a solution to my problem, instead of mocking all the Core Data calls, just use normal CoreData but set your persistent store to be in-memory.  The beauty of this is that your test execution isn't slowed down and you have a fresh clean database for each test. The article suggests using &lt;a href=&quot;https://github.com/magicalpanda/magicalrecord&quot;&gt;Magical Record&lt;/a&gt; to wrap up your Core Data access and be responsible for creating the in-memory store.&lt;/p&gt;
+
+&lt;p&gt;By using a combination of the CIMGF article and the Magical Record documentation I was able to get a method of our application implemented and tested in a few hours. Obviously things might change when we use it more but so far I think it is a great, low impact way of testing Core Data reliant code.  The TDD purist out there probably won't like it but I am happy.&lt;/p&gt;
+
+&lt;p&gt;Note: I had to add our xcdatamodeld file into the tests target to get it working, this isn't mentioned anywhere in the documentation so might just be something odd about our project set up.&lt;/p&gt;
+
+&lt;p&gt;Below is an example of one of the test&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;(void)testShouldStoreFileItemAsOffline {
+  File *item = [[File alloc] init];
+  item.name = @&quot;My Test Item&quot;;
+  store.context = [NSManagedObjectContext MR_defaultContext];
+  [store markItemAsOffline:item forProvider:[[Provider alloc] init] success:nil failure:nil];&lt;/p&gt;
+
+&lt;p&gt;  NSArray *items = [FileData MR_findAll];&lt;/p&gt;
+
+&lt;p&gt;  STAssertNotNil(items, @&quot;Should have returned items&quot;);
+  STAssertTrue([items count] == 1, @&quot;Should have returned a single item&quot;);
+  STAssertEqualObjects(((FileData *)[items objectAtIndex:0]).name, item.name, @&quot;Should have saved the supplied item&quot;);
+}&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Here are some other article that I found on my travels&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/6880739/how-to-use-core-data-for-dependency-injection&quot;&gt;http://stackoverflow.com/questions/6880739/how-to-use-core-data-for-dependency-injection&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://yannickloriot.com/2012/03/magicalrecord-how-to-make-programming-with-core-data-pleasant/&quot;&gt;http://yannickloriot.com/2012/03/magicalrecord-how-to-make-programming-with-core-data-pleasant/&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://iamleeg.blogspot.co.uk/2009/09/unit-testing-core-data-driven-apps.html&quot;&gt;http://iamleeg.blogspot.co.uk/2009/09/unit-testing-core-data-driven-apps.html&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>IFTTT</title>
+   <link href="http://www.stuartmackey.co.uk/blog/ifttt.html"/>
+   <updated>2012-08-29T08:21:00+01:00</updated>
+   <id>BLOG_URL/ifttt</id>
+   <content type="html">&lt;p&gt;Now that we have switched to using Octopress I have been trying to find a service that will auto post tweets when a new blog entry has been added. This morning I found &lt;a href=&quot;http://ifttt.com/&quot;&gt;ifttt.com&lt;/a&gt;. The UI that they use to create the rules is very impressive, it reminds me of the &lt;a href=&quot;https://getamen.com/&quot;&gt;Amen&lt;/a&gt; iOS app.&lt;/p&gt;
+
+&lt;p&gt;This post it also partly a test to check if the tweets are being created correctly, fingers crossed.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Test Driven iOS Development</title>
+   <link href="http://www.stuartmackey.co.uk/blog/test-driven-ios-development.html"/>
+   <updated>2012-08-28T20:34:00+01:00</updated>
+   <id>BLOG_URL/test-driven-ios-development</id>
+   <content type="html">&lt;p&gt;In a past life I was a .net developer and one of the things I loved about .net was Test Driven Development (TDD). When I moved to Objective-C and iOS development the first thing I looked for was a unit testing framework. At the time there really wasn't very much to help you, and the tools were far from perfect. Eventually I gave up looking, fooling myself into thinking that doing TDD for such a heavily UI based platform probably wouldn't be much use anyway.&lt;/p&gt;
+
+&lt;p&gt;Over the years I did look at TDD occasionally but if I was being honest with myself, not very hard. A few months ago I heard on twitter that a book was to be released on TDD for iOS, I was sceptical but interested.&lt;/p&gt;
+
+&lt;p&gt;The book was &lt;a href=&quot;http://www.amazon.co.uk/Test-driven-IOS-Development-Developers-Library/dp/0321774183/ref=sr_1_1?ie=UTF8&amp;amp;qid=1346182401&amp;amp;sr=8-1&quot;&gt;Test Driven iOS Development&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/secboffin&quot;&gt;Graham Lee&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/51SBJ-elskL._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU02_.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It took me a while to get around to reading it but I am very glad that I did. It is an excellent book, written specifically for experienced iOS developers who want a solid introduction to developing testable applications. The main success of the book is not bothering with lots of simple contrived examples, it centres around the development of a single app with each chapter adding more and more functionality.&lt;/p&gt;
+
+&lt;p&gt;I have to confess that the book is not perfect, there are quite a few errors and it can be hard to follow at times but overall it is worth it. Anyone that is even slightly interested in TDD for iOS should give it a read.&lt;/p&gt;
+
+&lt;p&gt;We have been using TDD for about a month now and while it hasn't been plain sailing all the way I think we are starting to see real benefits.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Using Octopress</title>
+   <link href="http://www.stuartmackey.co.uk/blog/using-octopress.html"/>
+   <updated>2012-08-28T14:57:00+01:00</updated>
+   <id>BLOG_URL/using-octopress</id>
+   <content type="html">&lt;p&gt;We have just completed the move from Tumblr to self hosting for our development blog. Previously, when it was only me doing all the development it was hosted in my tumblr account but now that we have more development staff it seemed the time was right to self host.  I found out about &lt;a href=&quot;http://octopress.org/&quot;&gt;Octopress&lt;/a&gt; over the weekend and thought I would take some time today to play around with it.  So far I am very impressed, set up was easy, I was able to import old Tumblr entries and configure the CSS to make it look a little more like the Paper Bag site.&lt;/p&gt;
+
+&lt;p&gt;Now all we have to do is start writing again. Hopefully it won't just be me posting here from now on.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Unit testing with Mongoid</title>
+   <link href="http://www.stuartmackey.co.uk/blog/unit-testing-with-mongoid.html"/>
+   <updated>2012-03-01T12:01:00+00:00</updated>
+   <id>BLOG_URL/unit-testing-with-mongoid</id>
+   <content type="html">&lt;p&gt;Since MongoDB has no transactions you need to the clearing up for data after each unit test manually, here is a tip to make that a lot easier. In file test_helper.rb in class ActiveSupport::TestCase add the following&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;teardown :clean_mongodb
+def clean_mongodb
+   Mongoid.database.collections.each do |collection|
+     unless collection.name =~ /^system\./
+       collection.remove
+     end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails HTTP Status Code to Symbol Mapping</title>
+   <link href="http://www.stuartmackey.co.uk/blog/rails-http-codes.html"/>
+   <updated>2012-03-01T12:00:00+00:00</updated>
+   <id>BLOG_URL/rails-http-codes</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.codyfauser.com/2008/7/4/rails-http-status-code-to-symbol-mapping&quot;&gt;Rails HTTP Status Code to Symbol Mapping&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Adding a directory to a bash path</title>
+   <link href="http://www.stuartmackey.co.uk/blog/adding-a-directory-to-bash.html"/>
+   <updated>2012-02-28T12:01:00+00:00</updated>
+   <id>BLOG_URL/adding-a-directory-to-bash</id>
+   <content type="html">&lt;p&gt;Some day I will remember how to do this without a google search&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo 'export PATH=&amp;lt;&amp;lt;YOUR_PATH&amp;gt;&amp;gt;;:$PATH' &amp;gt;&amp;gt; ~/.bash_profile
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Using Font Suitcase fonts in iOS</title>
+   <link href="http://www.stuartmackey.co.uk/blog/font-suitcase.html"/>
+   <updated>2012-02-28T12:00:00+00:00</updated>
+   <id>BLOG_URL/font-suitcase</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://apalan.cat/blog/2011/10/29/font-suitcase-fonts-in-ios/&quot;&gt;Using Font Suitcase fonts in iOS&lt;/a&gt;&lt;br/&gt;&lt;p&gt;I had struggled to find an application to extract TTF files out of a Font Suitcase and had tried to install Fondu myself but couldn&amp;#8217;t get it working on my Lion machine.&lt;/p&gt;
+
+&lt;p&gt;I followed the linked instructions on my Snow Leopard machine at home and it worked a treat.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Detecting a prominent colour</title>
+   <link href="http://www.stuartmackey.co.uk/blog/detecting-a-prominent-colour.html"/>
+   <updated>2012-02-28T12:00:00+00:00</updated>
+   <id>BLOG_URL/detecting-a-prominent-colour</id>
+   <content type="html">&lt;p&gt;We are working on a new iOS app at the moment and I was asked by the designer this morning if it would be possible for us to detect the most prominent colour in a user uploaded photo.  I considered using iOS to do the processing and then I reconsidered and looked into how it would be done with ruby.  It turned out that some wonderful developer had already done it and released a gem.  It is amazing how often this happens in the ruby world.&lt;/p&gt;
+
+
+
+
+&lt;p&gt;Based on a few rough tests the values it gives out are fairly accurate. Just make sure that you have already installed ImageMagick (which I did with HomeBrew, brew install imagemagick) and set the path to it correctly with &lt;/p&gt;
+
+
+
+
+&lt;p&gt;&lt;code&gt;Miro.options[:image_magick_path] = YOUR_SERVER_PATH&lt;/code&gt;&lt;/p&gt;
+
+
+
+
+&lt;p&gt;The gem can be found on &lt;a href=&quot;https://github.com/jonbuda/miro#readme&quot; title=&quot;GitHub&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+
 </content>
  </entry>
  
